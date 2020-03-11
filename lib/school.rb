@@ -4,7 +4,6 @@ class School
   attr_accessor :grade
   def initialize(roster=nil)
     @roster = Hash.new
-    @grade = Hash.new
   end
   
   def roster
@@ -12,7 +11,7 @@ class School
   end
   
   def add_student(student, grade)
-    
+    @roster[grade] << student
   end 
   
   def grade
