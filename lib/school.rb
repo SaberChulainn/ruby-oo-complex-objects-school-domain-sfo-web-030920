@@ -1,16 +1,20 @@
 # code here!
 
 class School
-  attr_accessor
+  attr_accessor :grade
   def initialize(roster=nil)
     @roster = Hash.new
+    @grade = Hash.new
   end
   
   def roster
     @roster
   end
   
-  def add_student(student)
+  def grade=(grade)
+    @grade << grade
+  end
+  def add_student(student, grade)
     @roster << student
   end 
   
