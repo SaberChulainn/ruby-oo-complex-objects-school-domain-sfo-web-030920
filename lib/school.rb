@@ -1,13 +1,12 @@
 # code here!
 
 class School
-  @all = []
   attr_accessor
   def initialize(roster=nil)
-    @all
+    @roster = Hash.new
   end
   
   def roster
-    @all
+    @roster
   end
 end 
