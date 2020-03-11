@@ -22,7 +22,7 @@ class School
   end 
   
   def sort
-    @roster.sort_by { |s| s.scan(/\d+/).first.to_i }
+    @roster.sort_by { |s| s}
   end 
   
 end 
