@@ -22,7 +22,7 @@ class School
   end 
   
   def sort
-    @roster.each |k, v|
+    @roster.each do |k, v|
     v.sort
   end
   
